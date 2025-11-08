@@ -1,0 +1,39 @@
+.mySwiper {
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  swiper-slide {
+    width: 110px;   /* ancho del slide = ancho de la card */
+    height: 160px;  /* opcional, coincide con el card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; /* mantiene la lógica de Swiper */
+  }
+  
+  ion-card {
+    width: 110px !important;
+    height: 160px !important;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  on-card-content{
+    margin-top: 100%;
+  }
+  
+  .poster {
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .titulo-grid {
+    padding-left: 12px; /* un pequeño margen */
+    padding-right: 12px;
+    max-width: 100% !important; /* evita límites del grid fijo */
+  }

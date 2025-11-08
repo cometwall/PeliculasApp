@@ -1,0 +1,24 @@
+<swiper-container
+  *ngIf="peliculas?.length"
+  slides-per-view="auto"
+  space-between="12"
+  [free-mode]="true"
+  [grab-cursor]="true"
+  [speed]="500"
+  class="mySwiper"
+>
+<swiper-slide *ngFor="let par of peliculas | pares">
+  <div class="poster-column">
+    <ion-card *ngFor="let pelicula of par" (click)="verDetalle( pelicula.id )">
+      <img class="poster" [src]="(pelicula.poster_path || '') | imagen" />
+    </ion-card>
+  </div>
+</swiper-slide>
+
+<swiper-slide class="btn-slide">
+  <ion-button class="btn-mas" (click)="onClick()" expand="full" size="large">
+    <ion-icon slot="icon-only" name="add"></ion-icon>
+  </ion-button>
+</swiper-slide>
+
+</swiper-container>

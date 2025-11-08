@@ -1,0 +1,47 @@
+.mySwiper {
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  swiper-slide {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .poster-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* separación entre las dos imágenes */
+  }
+  
+  ion-card {
+    width: 110px !important;
+    height: 160px !important;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  swiper-slide.btn-slide {
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    height: 160px;           /* mismo alto que los otros slides */
+  }
+  
+  .btn-mas {
+    width: 75px;
+    height: 50px;
+    border-radius: 50%;
+    --background: #3880ff;
+    color: white;
+    margin-top: 125%; 
+  }

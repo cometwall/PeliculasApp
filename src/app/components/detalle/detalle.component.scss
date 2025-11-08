@@ -1,0 +1,101 @@
+.poster-detalle-sobre {
+    position: relative;
+    top: -75px;
+    left: -10px;
+    margin-bottom: -75px;
+}
+
+.titulo {
+    width: 100%;
+    position: absolute;
+    color: white;
+    background-color: red;
+    padding: 5px 5px 40px 5px;
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.titulo h1{
+    position: absolute;
+    top: 28px;
+    left: 5px;
+}
+
+.card-actor {
+  width: 110px !important;   /* fijo según tu requerimiento */
+  height: 220px !important;   /* dejar que crezca según contenido */
+  display: flex;
+  flex-direction: column;     /* imagen arriba, contenido abajo */
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+  background: #fff;
+}
+
+/* imagen del poster */
+.card-actor .poster {
+  width: 110px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  flex: 0 0 auto;  /* que no se estire ni encoja */
+}
+
+/* area de texto debajo de la imagen */
+.card-actor-content {
+  width: 100%;
+  padding: 6px 6px 8px 6px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actor-name {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: normal;     /* 🔹 permite que el texto se divida en varias líneas */
+  word-wrap: break-word;   /* 🔹 fuerza salto si es muy largo */
+  margin-top: 6px;
+  padding: 0 4px;    
+  color: #4e4c4c;      /* 🔹 un poco de espacio lateral */
+}
+
+.mySwiper {
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  swiper-slide {
+    width: 110px;      /* coincide con el ancho de la card */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* alineamos la card al inicio */
+    flex-shrink: 0;
+  }
+  
+  ion-card {
+    width: 110px !important;
+    height: 160px !important;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .poster {
+    width: 110px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+  }
