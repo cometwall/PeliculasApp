@@ -54,7 +54,7 @@ npm install -g @ionic/cli
 API Key de TMDb (https://www.themoviedb.org/)
 
 Clonar el repositorio
-git clone https://github.com/usuario/peliculasApp.git
+git clone https://github.com/cometwall/peliculasApp.git
 cd peliculasApp
 
 Instalar dependencias
